@@ -17,6 +17,8 @@ for (let i = 0; i < $("main li").length; i++) {
   }
 }
 
+$(".current-year").text(new Date().getFullYear());
+
 $(window).on("unload", function() {
   sessionStorage.setItem("savedScrollTop", $(window).scrollTop() + "");
 });
