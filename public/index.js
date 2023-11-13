@@ -10,9 +10,9 @@ if ($("input").val() === "1") {
   }
 }
 
-for (let i = 0; i < $("main li").length; i++) {
-  if ($("main li").eq(i).text() === $("h2").text()) {
-    $("main li a").eq(i).addClass("current-section");
+for (let i = 0; i < $(".navigation-menu a").length; i++) {
+  if ($(".navigation-menu a").eq(i).text() === $("h2").text()) {
+    $(".navigation-menu a").eq(i).addClass("current-section");
     break;
   }
 }
